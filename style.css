@@ -215,9 +215,11 @@ button {
 }
 
 article {
+    width:100vw;
     display: flex;
-    justify-content: center; /* 子要素を均等に横配置する設定 */
+    justify-content: space-between;
     flex-direction: column;
+    padding-right: 0;
 }
 
 .title {
@@ -228,15 +230,22 @@ article {
     justify-content: center; /* 子要素を均等に横配置する設定 */
 }
 
-article {
-    padding-right: 0;
-    width: fit-content;
-}
-
 .images{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.img_1 {
+    width: 27.5%;
+}
+
+.img_2 {
+    width: 40%;
+}
+
+.img_3 {
+    width: 27.5%;
 }
 
 .ContentLeft {
