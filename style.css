@@ -1,0 +1,258 @@
+/* 基本スタイル（PC向けスタイル） */
+.first-view {
+    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* 子要素を均等に横配置する設定 */
+    align-items: center; /* 子要素を上下中央に揃える設定 */
+    height: 40px;
+    padding: 20px 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+article {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-right: 33%;
+}
+
+.ContentLeft {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin-left: 36px;
+}
+
+.ContentRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-weight: 700;
+    margin-right: 36px;
+}
+
+.font-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 10px;
+    text-decoration: none
+}
+
+.font-color:hover{
+    color: gray;
+}
+
+.counseling {
+    background-color: #f79214 ;
+    color: white ;
+    text-decoration: none;
+    padding: 0px 20px;
+    border-radius:38px;
+    font-size: 12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counseling:hover {
+    opacity: .8;
+}
+
+.body {
+    padding:0 50px;
+}
+
+.title {
+    color: #333;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.counseling-2 {
+    background-color: #f79214 ;
+    color: white ;
+    text-decoration: none;
+    padding: 20px 100px;
+    text-align: center;
+    border-radius:38px;
+}
+
+.counseling-2:hover {
+    opacity: .8;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+ul {
+    color: gray;
+    font-size: 10px;
+    list-style: none;
+}
+
+.footer {
+    background-color: #f79214;
+    color: white;
+    display: flex;
+    justify-content: center; /* 子要素を均等に横配置する設定 */
+    align-items: center;
+    padding: 44px 50px;
+}
+
+h2 {
+   font-size: 38px; 
+}
+
+h3 {
+    font-size: 16px; 
+}
+
+.video {
+    display: flex;
+    object-fit: contain;
+}
+
+.promotion {
+    margin-left: 32px;
+    width: 500px;
+}
+
+@media screen and (max-width: 1080px) {
+/* タブレット向けスタイル */
+
+.header {
+    height: 40px;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.title {
+    word-break: break-all;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.hamburger {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  margin-right: 30px;
+}
+
+.hamburger_bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  background: #000;
+}
+
+.hamburger_bar:nth-child(1) {
+  top: 0;
+}
+
+.hamburger_bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger_bar:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+.ContentRight {
+    display:none;
+}
+
+.ContentLeft {
+    height: 20px;
+    margin-left: 36px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+/* モバイル向けスタイル */
+.first-view {
+    background-image: none;
+}
+
+.body {
+    padding:0 0;
+    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* 子要素を均等に横配置する設定 */
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 70%;
+    font-size: 25px;
+    word-break: break-all;
+    display: flex;
+    justify-content: center; /* 子要素を均等に横配置する設定 */
+}
+
+article {
+    padding-right: 0;
+}
+
+.ContentLeft {
+    height: 20px;
+    margin-left: 36px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+}
+
+.video {
+    margin-top: 16px;
+    display: flex;
+    object-fit: contain;
+}
+
+.promotion {
+    width: fit-content;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 子要素を均等に横配置する設定 */
+}
+
+}
