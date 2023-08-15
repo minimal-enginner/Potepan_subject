@@ -24,7 +24,7 @@ article {
     display: flex;
     flex-direction: column; 
     justify-content: center;
-    padding-right: 33%;
+    padding-right: 30%;
 }
 
 .ContentLeft {
@@ -129,9 +129,8 @@ h3 {
     font-size: 16px; 
 }
 
-.video {
-    display: flex;
-    object-fit: contain;
+video {
+    width: 500px;
 }
 
 .promotion {
@@ -213,6 +212,9 @@ button {
     background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+article {
     display: flex;
     justify-content: center; /* 子要素を均等に横配置する設定 */
     flex-direction: column;
@@ -228,6 +230,13 @@ button {
 
 article {
     padding-right: 0;
+    width: fit-content;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .ContentLeft {
@@ -238,13 +247,12 @@ article {
 .footer {
     display: flex;
     flex-direction: column;
-    padding:0;
+    padding:0 20px;
 }
 
-.video {
-    margin-top: 16px;
-    display: flex;
-    object-fit: contain;
+video {
+    width : 80vw;
+    padding-top: 16px;
 }
 
 .promotion {
